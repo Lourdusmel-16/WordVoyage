@@ -183,6 +183,11 @@ Kotlin · Jetpack Compose · Material 3 · Firebase Authentication · Cloud Fire
 
 Suggestions and pull requests are welcome. Please open an issue first to discuss big changes.
 
+## 📄 License
+
+Released under the MIT License. See [LICENSE](LICENSE).
+
+
 ## 👤 Author
 
 **Lourdus Rogin Melkrin S**
