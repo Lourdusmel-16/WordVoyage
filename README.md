@@ -18,7 +18,7 @@ It listens to the child, highlights each word as it is read, offers help when th
 
 > 🔀 **Two versions of this app exist.**
 > This repository loads stories from a **JSON file** (works offline).
-> The **[Firestore version](https://github.com/Lourdusmel-16/WordVoyage-firestore)** loads stories from **Cloud Firestore** (add or edit stories without releasing a new app).
+> The **[Firestore version](https://github.com/Lourdusmel-16/WordVoyage-firebase)** loads stories from **Cloud Firestore** (add or edit stories without releasing a new app).
 > See [Which version should I use?](#-which-version-should-i-use) below.
 
 ---
@@ -76,7 +76,7 @@ It listens to the child, highlights each word as it is read, offers help when th
 
 **Advantages of this JSON version:** works offline, simple and free (no read costs for stories), content is version-controlled in Git, and stories load instantly with no network errors.
 
-👉 Want cloud-managed stories? **[Open the Firestore version →](https://github.com/Lourdusmel-16/WordVoyage-firestore)**
+👉 Want cloud-managed stories? **[Open the Firestore version →](https://github.com/Lourdusmel-16/WordVoyage-firebase)**
 
 ---
 
