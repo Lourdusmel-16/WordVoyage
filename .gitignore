@@ -7,7 +7,7 @@ build/
 local.properties
 captures/
 
-# Secrets - NEVER upload
+# Secrets - NEVER upload these mel
 app/google-services.json
 *.jks
 *.keystore
