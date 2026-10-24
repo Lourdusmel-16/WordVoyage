@@ -18,7 +18,7 @@ It listens to the child, highlights each word as it is read, offers help when th
 
 > 🔀 **Two versions of this app exist.**
 > This repository loads stories from a **JSON file** (works offline).
-> The **[Firestore version](https://github.com/Lourdusmel-16/WordVoyage-Firestore)** loads stories from **Cloud Firestore** (add or edit stories without releasing a new app).
+> The **[Firestore version](https://github.com/Lourdusmel-16/WordVoyage-firebase)** loads stories from **Cloud Firestore** (add or edit stories without releasing a new app).
 > See [Which version should I use?](#-which-version-should-i-use) below.
 
 ---
@@ -61,7 +61,7 @@ It listens to the child, highlights each word as it is read, offers help when th
 
 ## 🔀 Which version should I use?
 
-| | **JSON version** (this repo) | **[Firestore version](https://github.com/Lourdusmel-16/WordVoyage-Firestore)** |
+| | **JSON version** (this repo) | **[Firestore version](https://github.com/Lourdusmel-16/WordVoyage-firestore)** |
 |---|---|---|
 | Where stories live | `app/src/main/assets/stories.json` inside the app | `stories` collection in Cloud Firestore |
 | Adding / fixing a story | Edit the JSON, then release a new app version | Edit in Firebase or the in-app admin screen. **Every user gets it instantly, no app update** |
@@ -76,7 +76,7 @@ It listens to the child, highlights each word as it is read, offers help when th
 
 **Advantages of this JSON version:** works offline, simple and free (no read costs for stories), content is version-controlled in Git, and stories load instantly with no network errors.
 
-👉 Want cloud-managed stories? **[Open the Firestore version →](https://github.com/Lourdusmel-16/WordVoyage-Firestore)**
+👉 Want cloud-managed stories? **[Open the Firestore version →](https://github.com/Lourdusmel-16/WordVoyage-firebase)**
 
 ---
 
@@ -142,9 +142,6 @@ Full, step-by-step instructions are in **[docs/SETUP.md](docs/SETUP.md)**. In sh
 5. Add the speech-recognition model files to `app/src/main/assets/sherpa-model/`.
 6. Run on a real Android device and allow the microphone.
 
-**Tests:** `./gradlew testDebugUnitTest`
-**CI:** every push builds the app and runs the unit tests on GitHub Actions. Add a repository secret named `GOOGLE_SERVICES_JSON` containing the full text of your `google-services.json`.
-
 ---
 
 ## 🗂️ Project structure
@@ -186,6 +183,7 @@ Suggestions and pull requests are welcome. Please open an issue first to discuss
 ## 📄 License
 
 Released under the MIT License. See [LICENSE](LICENSE).
+
 
 ## 👤 Author
 
